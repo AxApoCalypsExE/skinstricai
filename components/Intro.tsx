@@ -1,18 +1,22 @@
+import Link from "next/link";
 import React from "react";
 import { MdPlayArrow } from "react-icons/md";
 
 const Intro = () => {
   return (
     <div className="relative w-full overflow-hidden">
-      <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center">
         {/* Left diamond */}
-        <div className="absolute w-[300px] h-[300px] transform rotate-45 border-2 border-[--primary] border-dotted opacity-30 lg:left-[-200px] lg:w-[400px] lg:h-[400px] lg:opacity-60"></div>
+        <div className="pointer-events-none absolute w-[300px] h-[300px] transform rotate-45 border-2 border-[--primary] border-dotted opacity-30 lg:left-[-225px] lg:w-[400px] lg:h-[400px] lg:opacity-60"></div>
         {/* Right diamond */}
-        <div className="absolute w-[350px] h-[350px] transform rotate-45 border-2 border-[--primary] border-dotted opacity-60 lg:right-[-200px] lg:w-[400px] lg:h-[400px] lg:opacity-60"></div>
+        <div className="pointer-events-none absolute w-[350px] h-[350px] transform rotate-45 border-2 border-[--primary] border-dotted opacity-60 lg:right-[-225px] lg:w-[400px] lg:h-[400px] lg:opacity-60"></div>
 
         {/* Take Test button */}
-        <div className="hidden items-center justify-center gap-4 lg:flex">
-          <p className="text-xs uppercase font-bold">Take Test</p>
+        <Link
+          href={"/testing"}
+          className="hidden items-center justify-center gap-4 lg:flex lg:absolute right-16 cursor-pointer"
+        >
+          <p className="text-xs uppercase font-bold opacity-60">Take Test</p>
           <div className="relative flex items-center justify-center w-8 h-8">
             {/* Decorative dotted square */}
             <div className="absolute inset-0 transform rotate-45 border-2 border-[#a0a4ab] pointer-events-none"></div>
@@ -22,11 +26,13 @@ const Intro = () => {
               <MdPlayArrow className="" />
             </figure>
           </div>
-        </div>
+        </Link>
 
         {/* Discover A.I. button */}
-        <div className="hidden items-center justify-center gap-4 lg:flex lg:flex-row-reverse">
-          <p className="text-xs uppercase font-bold">Discover A.I.</p>
+        <div className="hidden items-center justify-center gap-4 lg:flex lg:flex-row-reverse lg:absolute left-16">
+          <p className="text-xs uppercase font-bold opacity-60">
+            Discover A.I.
+          </p>
           <div className="relative flex items-center justify-center w-8 h-8">
             {/* Decorative dotted square */}
             <div className="absolute inset-0 transform rotate-45 border-2 border-[#a0a4ab] pointer-events-none"></div>

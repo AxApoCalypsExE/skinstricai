@@ -34,6 +34,7 @@ body {
     --chart-3: #273354;
     --chart-4: #e9c468;
     --chart-5: #f4a462;
+    --header-height: 80px;
   }
   
   .dark {
@@ -61,7 +62,7 @@ body {
     --chart-3: #e88c30;
     --chart-4: #af57db;
     --chart-5: #e236a9;
-  }  
+  }
 }
 
 @layer components {
