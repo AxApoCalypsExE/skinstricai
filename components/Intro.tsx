@@ -13,7 +13,7 @@ const Intro = () => {
 
         {/* Take Test button */}
         <Link
-          href={"/testing"}
+          href={"/intro"}
           className="hidden items-center justify-center gap-4 lg:flex lg:absolute right-16 cursor-pointer"
         >
           <p className="text-xs uppercase font-bold opacity-60">Take Test</p>
